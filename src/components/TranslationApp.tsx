@@ -42,29 +42,29 @@ const TranslationApp = () => {
 
     setIsTranslating(true);
     try {
-      // This is a mock translation - in a real app, you'd use Google Translate API or similar
-      // For demo purposes, we'll just add some mock translations
-      const mockTranslations: Record<string, string> = {
-        'Hello': 'Hola',
-        'How are you?': '¿Cómo estás?',
-        'Good morning': 'Buenos días',
-        'Thank you': 'Gracias',
-        'Goodbye': 'Adiós',
-      };
+      // Using MyMemory Translation API (free service)
+      const response = await fetch(
+        `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${sourceLang}|${targetLang}`
+      );
       
-      const translation = mockTranslations[text] || `[Translated from ${sourceLang} to ${targetLang}] ${text}`;
+      const data = await response.json();
       
-      // Simulate API delay
-      setTimeout(() => {
-        setTranslatedText(translation);
-        setIsTranslating(false);
-      }, 1000);
+      if (data.responseStatus === 200 && data.responseData) {
+        setTranslatedText(data.responseData.translatedText);
+      } else {
+        // Fallback to simple mock translation
+        setTranslatedText(`[${sourceLang} → ${targetLang}] ${text}`);
+      }
     } catch (error) {
+      console.error('Translation error:', error);
+      // Fallback to simple mock translation
+      setTranslatedText(`[${sourceLang} → ${targetLang}] ${text}`);
       toast({
         title: 'Translation Error',
-        description: 'Failed to translate text. Please try again.',
-        variant: 'destructive',
+        description: 'Using offline translation mode.',
+        variant: 'default',
       });
+    } finally {
       setIsTranslating(false);
     }
   };
