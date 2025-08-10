@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background card -->
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="#0f172a"/>
+  <rect x="32" y="32" width="448" height="448" rx="96" stroke="url(#bg)" stroke-width="8" fill="none"/>
+
+  <!-- Camera aperture (represents snap) -->
+  <g transform="translate(256 240)" filter="url(#shadow)">
+    <circle r="92" stroke="#e2e8f0" stroke-width="12" fill="none"/>
+    <g stroke="#e2e8f0" stroke-width="12" stroke-linecap="round">
+      <path d="M0 -84 L36 -20"/>
+      <path d="M36 -20 L-36 -20"/>
+      <path d="M-36 -20 L0 -84"/>
+      <path d="M0 84 L-36 20"/>
+      <path d="M-36 20 L36 20"/>
+      <path d="M36 20 L0 84"/>
+    </g>
+  </g>
+
+  <!-- Speech bubble (represents speak/translate) -->
+  <g transform="translate(328 340)" filter="url(#shadow)">
+    <path d="M0 0c0-31 25-56 56-56s56 25 56 56-25 56-56 56h-6l-30 22c-6 4-14-2-12-9l6-21C14 81 0 62 0 40z" fill="url(#bg)"/>
+    <g stroke="#0f172a" stroke-width="8" stroke-linecap="round">
+      <path d="M40 24h48"/>
+      <path d="M40 48h32"/>
+    </g>
+  </g>
+
+</svg>
