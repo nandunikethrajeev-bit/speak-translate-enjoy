@@ -1,76 +1,29 @@
-# Welcome to your Lovable project
+# Speak Translate Enjoy
 
-## Project info
+Speak Translate Enjoy is a beginner-level project created as part of my learning journey in Artificial Intelligence and Machine Learning.
 
-**URL**: https://lovable.dev/projects/2e5a3306-11d8-43ed-a47e-ff50993e559f
+The aim of this project is to explore basic concepts related to speech input, language translation, and simple user interaction through a web interface.
 
-## How can I edit this code?
+### Features
+- Speech input from the user
+- Basic text translation functionality
+- Simple and interactive interface
 
-There are several ways of editing your application.
+### Technologies Used
+- HTML
+- CSS
+- JavaScript
 
-**Use Lovable**
+### Purpose of the Project
+This project was developed to understand how speech-based input and translation concepts work at a basic level.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2e5a3306-11d8-43ed-a47e-ff50993e559f) and start prompting.
+It helped me gain exposure to frontend development, logic implementation, and working with interactive features.
 
-Changes made via Lovable will be committed automatically to this repo.
+The project is still under development as I continue learning and improving my skills.
 
-**Use your preferred IDE**
+### Author
+Niketh Rajeev  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/2e5a3306-11d8-43ed-a47e-ff50993e559f) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
 
 ----
 
